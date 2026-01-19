@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://example.org/tags/hugo/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://example.org/posts/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/publish-blog/</loc>
+    <loc>https://example.org/tags/publish-blog/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</loc>
+    <loc>https://example.org/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</loc>
+    <loc>https://example.org/tags/%EA%B8%80%EC%93%B0%EA%B8%B0/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
+    <loc>https://example.org/categories/%EB%B8%94%EB%A1%9C%EA%B7%B8/</loc>
     <lastmod>2026-01-19T14:59:19+00:00</lastmod>
   </url>
 </urlset>

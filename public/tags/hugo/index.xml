@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on FightingYK Blog</title>
-    <link>http://localhost:1313/tags/hugo/</link>
+    <link>https://example.org/tags/hugo/</link>
     <description>Recent content in Hugo on FightingYK Blog</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
     <lastBuildDate>Mon, 19 Jan 2026 14:59:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>개발자 블로그를 시작하며</title>
-      <link>http://localhost:1313/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</link>
+      <link>https://example.org/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</link>
       <pubDate>Mon, 19 Jan 2026 13:59:39 +0000</pubDate>
-      <guid>http://localhost:1313/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</guid>
+      <guid>https://example.org/posts/05_%EB%B8%94%EB%A1%9C%EA%B7%B8/260119_%EA%B0%9C%EB%B0%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EB%A9%B0/</guid>
       <description>&lt;h1 id=&#34;배경&#34;&gt;배경&lt;/h1&gt;&#xA;&lt;p&gt;최근에 너무 업무에만 치우쳐서 살게되니 겉으로 안드러나는 결과물만 만들게 되어 매너리즘에 빠지게 된다. 글이든 사이드 프로젝트든 아웃풋을 만들어내고 이를 통해 외부로 소통을 하고 싶다는 욕구가 늘어가게 되어 작지만 쉽게 할 수 있는 글쓰기부터 해보자는 결심이 섰다.&lt;/p&gt;&#xA;&lt;p&gt;너무 욕심은 내지 말고 한달에 2~4건 정도 글을 써본다는 마음가짐으로 시작해보기로한다. (꾸준히 포기하지말고 써보기! ✏️)&lt;/p&gt;&#xA;&lt;p&gt;예전에 몇번인가 개발 블로그를 운영해보려는 시도를 한적 있는데, 매번 몇달하다가 실패했었다. 그 이유를 생각해보면 내가 완벽하게 글을 쓰려는 욕심에 의해 너무 많은 시간을 투자하다보니 제풀에 지쳐떨어졌던 기억이 난다. 그런 의미에서 이번에는 조금 가볍게 해보려 한다.&lt;/p&gt;</description>
     </item>
   </channel>
