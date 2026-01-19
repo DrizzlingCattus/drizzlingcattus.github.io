@@ -1,0 +1,37 @@
+baseurl: "https://example.org/"  # please update this to your actual URL
+languageCode: "ko-kr"
+title: "FightingYK Blog"
+theme: ["hugo-xmin"]
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+footnotereturnlinkcontents: "↩"
+
+permalinks:
+  post: "/post/:year/:month/:day/:contentbasename"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: Categories
+      url: "categories/"
+      weight: 2
+    - name: Tags
+      url: "tags/"
+      weight: 3
+    - name: About
+      url: "about/"
+      weight: 4
+
+params:
+  description: "FightingYK"
+  footer: "&copy; FightingYK | [Github](https://github.com/DrizzlingCattus)"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true

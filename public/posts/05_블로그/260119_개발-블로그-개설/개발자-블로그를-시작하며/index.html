@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>개발자 블로그를 시작하며 | FightingYK Blog</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/about/">About</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">개발자 블로그를 시작하며</span></h1>
+
+<h2 class="date">2026/01/19</h2>
+</div>
+
+<main>
+<h1 id="배경">배경</h1>
+<p>최근에 너무 업무에만 치우쳐서 살게되니 겉으로 안드러나는 결과물만 만들게 되어 매너리즘에 빠지게 된다. 글이든 사이드 프로젝트든 아웃풋을 만들어내고 이를 통해 외부로 소통을 하고 싶다는 욕구가 늘어가게 되어 작지만 쉽게 할 수 있는 글쓰기부터 해보자는 결심이 섰다.</p>
+<p>너무 욕심은 내지 말고 한달에 2~4건 정도 글을 써본다는 마음가짐으로 시작해보기로한다. (꾸준히 포기하지말고 써보기! ✏️)</p>
+<p>예전에 몇번인가 개발 블로그를 운영해보려는 시도를 한적 있는데, 매번 몇달하다가 실패했었다. 그 이유를 생각해보면 내가 완벽하게 글을 쓰려는 욕심에 의해 너무 많은 시간을 투자하다보니 제풀에 지쳐떨어졌던 기억이 난다. 그런 의미에서 이번에는 조금 가볍게 해보려 한다.</p>
+<h1 id="static-site-genator를-선택하다">Static Site Genator를 선택하다</h1>
+<p>최대한 빠르고 간단하게 블로그를 구축하고 싶고, markdown 형식의 파일을 만들어서 이를 기준으로 블로그를 운영하고 싶었다. 그럼 static site generator를 사용하는게 좋겠다 판단이 들어 적당히 후보군을 살펴봤다.</p>
+<ul>
+<li><code>jeykell</code> : 풍부한 기능, 간단한 github 통합. 하지만 많은 기능으로 인한 복잡성과 무거움.</li>
+<li><code>hugo</code> : 적당한 기능, 좀더 개발자 친화적. 조금 번거롭지만 정적페이지 생성 속도가 비교적 빠름.</li>
+</ul>
+<p>난 어차피 많은 기능이 필요하지 않았고, 시작은 간단한 테마에 글만 작성할 수 있으면 되었기에 큰 고민없이 <code>hugo</code>를 선택했다. 필요하면 나중에 Google Analytics든 뭐든 붙이면 그만이다.</p>
+<h1 id="레이아웃-구상">레이아웃 구상</h1>
+<p>hugo는 Go 언어로 작성되었고, <a href="Hugo%EB%8A%94%20Go%20Template%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4%7CGo%20%EC%96%B8%EC%96%B4%20html/template%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%EB%A5%BC%20%ED%86%B5%ED%95%B4%20%EC%82%AC%EC%9A%A9%EC%9E%90%EA%B0%80%20%EC%9B%90%ED%95%98%EB%8A%94%20%ED%98%95%ED%83%9C%EC%9D%98%20HTML%EC%9D%84%20%EC%83%9D%EC%84%B1">Hugo는 Go Template 라이브러리를 사용한다|Go 언어 html/template 라이브러리를 통해 사용자가 원하는 형태의 HTML을 생성</a>할 수 있도록 환경을 마련해두었다.</p>
+<p>처음 구상은 간단한 형태로 시작하고 싶었다. 일단 <a href="https://xmin.yihui.org/">hugo-xmin</a>이라는 미니멀한 디자인 theme를 하나 선택해서 레이아웃을 만들기 시작했다.<br>
+<img src="/Resources/Resources/Pasted%20image%2020260119233537.png" alt="Pasted image 20260119233537.png"><br>
+(그림 1. Home/Tags/Categories/About으로 구성된 4개의 메뉴에 간단한 footer를 가진 레이아웃)</p>
+<h1 id="레이아웃-설정">레이아웃 설정</h1>
+<p>Hugo의 레이아웃은 Site Configuration File을 수정하면 간단하게 변경이 가능하다.</p>
+<p>먼저, 4개 메뉴를 순서대로 설정하고</p>
+<pre><code class="language-yaml">menu:
+  main:
+    - name: Home
+      url: &quot;&quot;
+      weight: 1
+    - name: Categories
+      url: &quot;categories/&quot;
+      weight: 2
+    - name: Tags
+      url: &quot;tags/&quot;
+      weight: 3
+    - name: About
+      url: &quot;about/&quot;
+      weight: 4
+</code></pre>
+<p>footer를 약식으로 텍스트만 설정해준뒤</p>
+<pre><code class="language-yaml">params:
+  description: &quot;FightingYK&quot;
+  footer: &quot;&amp;copy; FightingYK | [Github](https://github.com/DrizzlingCattus)&quot;
+</code></pre>
+<p>각 페이지의 url 패턴을 날짜 + 파일이름을 기준으로 설정해주면 끝!</p>
+<pre><code class="language-yaml">permalinks:
+  post: &quot;/post/:year/:month/:day/:contentbasename&quot;
+</code></pre>
+<p><img src="/Resources/Resources/Pasted%20image%2020260119235721.png" alt="Pasted image 20260119235721.png"></p>
+<p><img src="/Resources/Resources/Pasted%20image%2020260119235743.png" alt="Pasted image 20260119235743.png"><br>
+(그림 2, 3. 아직 많이 심심한 모습이지만 마음에 든다.)</p>
+<h1 id="future-works">Future works</h1>
+<p>아직 끝난건 아니고, 이제 obsidian 환경에서 글을 쓰고 hugo 환경으로 글을 배포하기 쉽도록 플러그인 등을 설정하는 작업이 필요하다. 다음 글에서 이어서 작성해보겠다.</p>
+<h1 id="중요한-것">중요한 것</h1>
+<p>이렇게 만들어두면 뭐하겠나? 다른것보다도 중요한건 꾸준히하는게 제일 중요하다. 이를 위해 몇 가지 명심할 내용을 내 나름 마음에 새겨보며 마친다.</p>
+<ul>
+<li>너무 대단한걸 기록하려하지말고 간단한 것이라도 기록해보자는 마음가짐으로 시작한다.</li>
+<li>글이 길어질 것 같다면 시리즈로 나눠서 작성해라. 너무 길어지면 지친다.</li>
+<li>내가 업무를 하면서 느꼈던 점이나 배운점들을 나의 언어로 기록하는게 중요하다.</li>
+<li>기존에 있던 학습용도의 지식은 private 기록환경에 잘 쌓아두는 것으로도 충분하고, 이를 취합하여 구조화/유추/근거를 만드는 글을 작성하는게 중요하다.</li>
+</ul>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  © FightingYK | <a href="https://github.com/DrizzlingCattus">Github</a>
+  
+  </footer>
+  </body>
+</html>
+
