@@ -6,11 +6,27 @@ body {
 }
 
 /* header and footer areas */
-.menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu {
+  padding: 0;
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li {
+  display: inline-block;
+  margin: 0 0 0 1.5em; /* 메뉴는 모두 오른쪽으로 */
+}
+.menu li:first-child {
+  margin-right: auto; /* 첫 번째 항목(로고)을 왼쪽으로 */
+  margin-left: 0;
+  font-weight: 600;
+  font-size: 1.2em;
+}
 .article-meta, .menu a {
   text-decoration: none;
-  background: #eee;
+  background: transparent;
+  color: #333;
   padding: 5px;
   border-radius: 5px;
 }

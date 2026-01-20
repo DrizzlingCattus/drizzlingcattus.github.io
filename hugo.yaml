@@ -1,7 +1,10 @@
 baseurl: "https://example.org/"  # please update this to your actual URL
 languageCode: "ko-kr"
-title: "FightingYK Blog"
-theme: ["hugo-xmin"]
+title: "FightingYK"
+theme:
+  - "hugo-xmin-fightingyk"
+  # - "hugo-xmin"
+  # - "hugo-book"
 googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
@@ -12,18 +15,15 @@ permalinks:
 
 menu:
   main:
-    - name: Home
-      url: ""
+    - name: Posts
+      url: "posts/"
       weight: 1
-    - name: Categories
-      url: "categories/"
-      weight: 2
     - name: Tags
       url: "tags/"
-      weight: 3
+      weight: 2
     - name: About
       url: "about/"
-      weight: 4
+      weight: 3
 
 params:
   description: "FightingYK"
