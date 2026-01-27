@@ -1,0 +1,22 @@
+{{- /* layouts/index.postActivity.json */ -}}
+{{- $postsByDate := dict -}}
+
+{{- /* 모든 포스트를 날짜별로 그룹화 */ -}}
+{{- range where .Site.RegularPages "Type" "posts" -}}
+  {{- $date := .Date.Format "2006-01-02" -}}
+  {{- $count := index $postsByDate $date | default 0 -}}
+  {{- $postsByDate = merge $postsByDate (dict $date (add $count 1)) -}}
+{{- end -}}
+
+{{- /* JSON 배열 생성 */ -}}
+[
+{{- $first := true -}}
+{{- range $date, $count := $postsByDate -}}
+  {{- if not $first -}},{{- end -}}
+  {
+    "date": "{{ $date }}",
+    "value": {{ $count }}
+  }
+  {{- $first = false -}}
+{{- end -}}
+]

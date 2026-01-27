@@ -13,6 +13,19 @@ footnotereturnlinkcontents: "↩"
 permalinks:
   post: "/post/:year/:month/:day/:contentbasename"
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - postActivity
+
+outputFormats:
+  postActivity:
+    mediaType: application/json
+    baseName: post-activity
+    isPlainText: true
+    notAlternative: true
+
 menu:
   main:
     - name: Posts
