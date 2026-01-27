@@ -17,8 +17,11 @@
     <nav>
     <ul class="menu">
       <li>
-        <img src="/favicon-32.png" alt="" style="width: 32px; height: 32px; vertical-align:middle; margin-right: 0px;"/>
-	<a href="/"> {{ (site.Params.label.text | default site.Title) }} </a></li>
+	<a href="/">
+	  <img src="/favicon-32.png" alt="" style="width: 32px; height: 32px; vertical-align:middle; margin-right: 0px;"/>
+	  {{ (site.Params.label.text | default site.Title) }}
+	</a>
+      </li>
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
       {{ end }}
